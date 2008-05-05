@@ -1,13 +1,5 @@
-MagicEnums
-==========
+h1. MagicEnums
 
-Introduction goes here.
+A nice way to have enums in Rails.
 
-
-Example
-=======
-
-Example goes here.
-
-
-Copyright (c) 2008 [name of plugin creator], released under the MIT license
+Copyright (c) 2008 "Zach Inglis":http://zachinglis.com, released under the MIT license
