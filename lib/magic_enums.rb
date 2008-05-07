@@ -17,7 +17,7 @@ module MagicEnums
         validate :validate_#{column_name}_choice
         
         def validate_#{column_name}_choice
-          errors.add(\"#{column_name}\", \"#{configuration(:message)}\") unless self.#{column_name}_choices.include?(self.choice) # This configuration variable isn't working
+          # errors.add(\"#{column_name}\", \"#{configuration(:message)}\") unless self.#{column_name}_choices.include?(self.choice) # This configuration variable isn't working
         end
       "
       
