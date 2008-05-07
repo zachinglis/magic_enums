@@ -2,6 +2,8 @@ h1. MagicEnums
 
 h2. Introduction
 
+*RAILS 2.1/EDGE only!*
+
 A nice way to have enums in Rails.
 
 Enumerations are easy as integers, however I want to take a text approach to it as soon as rearranging integers can get fussy.
@@ -25,5 +27,18 @@ _or_
 h3. In your controller
 
 In your controller, you can check the status <code>post_record.status_is_published?</code> or simply by calling <code>person_record.gender</code> to find it out in words, as you would normally.
+
+You can also do find calls like so:
+<pre>
+  <code>
+    Post.status_is_published
+  </code>
+</pre>
+_or_
+<pre>
+  <code>
+    Person.gender_is_male
+  </code>
+</pre>
 
 Copyright (c) 2008 "Zach Inglis":http://zachinglis.com, released under the MIT license

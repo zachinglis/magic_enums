@@ -13,6 +13,8 @@ module MagicEnums
       
       choices.each do |choice|
         class_eval "
+          named_scope :#{column_name}_is_#{choice}, :conditions => {:#{column_name} => \"#{choice}\"}
+        
           def #{column_name}_is_#{choice}?
             self.#{column_name} == '#{choice}'
           end

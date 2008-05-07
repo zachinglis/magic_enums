@@ -21,7 +21,6 @@ class Person
    
    def attribute_column(column)
     "self.database_#{column}"
-   end
-   
+   end   
    
 end
