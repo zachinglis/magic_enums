@@ -8,6 +8,8 @@ Enumerations are easy as integers, however I want to take a text approach to it 
 
 h2. Usage
 
+h3. In your models
+
 <pre>
   <code>
     enum_column :status, %w(draft private published)    
@@ -19,5 +21,8 @@ _or_
     enum_column :gender, ['draft', 'private', 'published']
   </code>
 </pre>
+
+h3. In your controller
+In your controller, you can check the status <code>post_record.status_is_published?</code> or simply by calling <code>person_record.gender</code> to find it out in words, as you would normally.
 
 Copyright (c) 2008 "Zach Inglis":http://zachinglis.com, released under the MIT license
