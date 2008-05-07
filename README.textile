@@ -23,6 +23,7 @@ _or_
 </pre>
 
 h3. In your controller
+
 In your controller, you can check the status <code>post_record.status_is_published?</code> or simply by calling <code>person_record.gender</code> to find it out in words, as you would normally.
 
 Copyright (c) 2008 "Zach Inglis":http://zachinglis.com, released under the MIT license
