@@ -31,13 +31,13 @@ In your controller, you can check the status <code>post_record.status_is_publish
 You can also do find calls like so:
 <pre>
   <code>
-    Post.status_is_published
+    Post.status_is_published?
   </code>
 </pre>
 _or_
 <pre>
   <code>
-    Person.gender_is_male
+    Person.gender_is_male?
   </code>
 </pre>
 
