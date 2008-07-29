@@ -20,7 +20,7 @@ h3. In your models
 _or_
 <pre>
   <code>
-    enum_column :gender, ['draft', 'private', 'published']
+    enum_column :gender, ['male', 'female']
   </code>
 </pre>
 
