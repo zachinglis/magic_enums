@@ -1,0 +1,7 @@
+init.rb
+README.textile
+Rakefile
+MIT-LICENSE
+lib/magic_enums.rb
+test/magic_enums_test.rb
+Manifest

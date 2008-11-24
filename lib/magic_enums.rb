@@ -1,6 +1,6 @@
 module MagicEnums
   def self.included(base)
-   base.extend(ClassMethods)
+    base.extend(ClassMethods)
   end
 
   module ClassMethods
@@ -45,3 +45,5 @@ module MagicEnums
     end
   end
 end
+
+ActiveRecord::Base.send :include, MagicEnums rescue nil

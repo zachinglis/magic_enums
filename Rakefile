@@ -1,22 +1,13 @@
+require 'rubygems'
 require 'rake'
-require 'rake/testtask'
-require 'rake/rdoctask'
+require 'echoe'
 
-desc 'Default: run unit tests.'
-task :default => :test
-
-desc 'Test the magic_enums plugin.'
-Rake::TestTask.new(:test) do |t|
-  t.libs << 'lib'
-  t.pattern = 'test/**/*_test.rb'
-  t.verbose = true
+Echoe.new('magic_enums', '0.0.1') do |p|
+  p.description = "A nice way to have enums in Rails."
+  p.url = "http://github.com/zachinglis/magic_enums/tree/master"
+  p.author = 'Zach Inglis'
+  p.ignore_pattern = ["tmp/*","script/*"]
+  p.development_dependencies = []
 end
 
-desc 'Generate documentation for the magic_enums plugin.'
-Rake::RDocTask.new(:rdoc) do |rdoc|
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'MagicEnums'
-  rdoc.options << '--line-numbers' << '--inline-source'
-  rdoc.rdoc_files.include('README')
-  rdoc.rdoc_files.include('lib/**/*.rb')
-end
+Dir["#{File.dirname(__FILE__)}/tasks/*.rake"].sort.each { |ext| load ext }

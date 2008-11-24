@@ -1,1 +1,1 @@
-ActiveRecord::Base.send :include, MagicEnums
+require 'magic_enums'
