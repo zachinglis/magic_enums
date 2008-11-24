@@ -8,6 +8,11 @@ A nice way to have enums in Rails.
 
 Enumerations are easy as integers, however I want to take a text approach to it as soon as rearranging integers can get fussy.
 
+h2. Install
+
+<code>sudo gem sources -a http://gems.github.com</code>
+<code>sudo gem install zachinglis-magic_enums</code>
+
 h2. Usage
 
 h3. In your models
@@ -15,14 +20,18 @@ h3. In your models
 <pre>
   <code>
     enum_column :status, %w(draft private published)    
+    # This also supplies you with: Post.status_choices
   </code>
 </pre>
 _or_
 <pre>
   <code>
     enum_column :gender, ['male', 'female']
+    # This also supplies you with: Person.gender_choices    
   </code>
 </pre>
+
+It also supplies you with the handy method:
 
 h3. In your controller
 
