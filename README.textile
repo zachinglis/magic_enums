@@ -2,7 +2,7 @@ h1. MagicEnums
 
 h2. Introduction
 
-*RAILS 2.1/EDGE only!*
+*RAILS 2.1+ only!*
 
 A nice way to have enums in Rails.
 
@@ -28,16 +28,16 @@ h3. In your controller
 
 In your controller, you can check the status <code>post_record.status_is_published?</code> or simply by calling <code>person_record.gender</code> to find it out in words, as you would normally.
 
-You can also do find calls like so:
+You can also do find calls (Using named_scope) like so:
 <pre>
   <code>
-    Post.status_is_published?
+    Post.status_is_published
   </code>
 </pre>
 _or_
 <pre>
   <code>
-    Person.gender_is_male?
+    Person.gender_is_male
   </code>
 </pre>
 
