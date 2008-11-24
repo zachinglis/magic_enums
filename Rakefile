@@ -2,7 +2,7 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('magic_enums', '0.0.1') do |p|
+Echoe.new('magic_enums', '0.1.0') do |p|
   p.description = "A nice way to have enums in Rails."
   p.url = "http://github.com/zachinglis/magic_enums/tree/master"
   p.author = "Zach Inglis"
