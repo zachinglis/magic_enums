@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors = ["Zach Inglis"]
   s.date = %q{2008-11-23}
   s.description = %q{A nice way to have enums in Rails.}
-  s.email = %q{}
+  s.email = %q{zach@lt3media.com}
   s.extra_rdoc_files = ["README.textile", "lib/magic_enums.rb"]
   s.files = ["init.rb", "README.textile", "Rakefile", "MIT-LICENSE", "lib/magic_enums.rb", "test/magic_enums_test.rb", "Manifest", "magic_enums.gemspec", "test/test_helper.rb"]
   s.has_rdoc = true
